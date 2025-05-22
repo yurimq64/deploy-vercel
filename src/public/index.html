@@ -1,11 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basquete Hoje</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background-color: #121212;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1584735174644-d0f6f2f3d83c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #f39c12;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #f39c12;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
+
+  <header>
+    <h1>Basquete Hoje: Energia nas Quadras</h1>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Notícias</a>
+    <a href="#">Jogadores</a>
+    <a href="#">Temporada</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <div class="content">
+    <h2 class="section-title">Destaques</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>NBA 2025</h3>
+        <p>Os playoffs estão pegando fogo! Times históricos disputam cada ponto com intensidade máxima.</p>
+      </div>
+      <div class="card">
+        <h3>Novas Promessas</h3>
+        <p>Conheça os jovens talentos que estão se destacando nas ligas universitárias e no Draft.</p>
+      </div>
+      <div class="card">
+        <h3>Dicas de Treinamento</h3>
+        <p>Quer melhorar seu arremesso? Veja nossos treinos recomendados para amadores e profissionais.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Basquete Hoje. Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>
