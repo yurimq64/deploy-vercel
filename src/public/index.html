@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basquete Hoje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NBA Hoje</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,72 +13,85 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #fff;
-      background-color: #121212;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0b0c10;
+      color: #ffffff;
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1584735174644-d0f6f2f3d83c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), 
+        url('https://wallpapercave.com/wp/wp6612510.jpg') no-repeat center center/cover;
+      height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: #fff;
+      color: white;
+      padding: 20px;
+    }
+
+    header img {
+      width: 100px;
+      margin-bottom: 20px;
     }
 
     header h1 {
       font-size: 3rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
     }
 
     nav {
-      background-color: #1e1e1e;
+      background-color: #1f2833;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       padding: 15px 0;
     }
 
     nav a {
       color: #fff;
+      margin: 0 15px;
       text-decoration: none;
-      margin: 0 20px;
       font-weight: bold;
-      transition: color 0.3s;
+      padding: 10px;
+      transition: all 0.3s ease;
     }
 
     nav a:hover {
-      color: #f39c12;
+      color: #66fcf1;
     }
 
     .content {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     .section-title {
-      text-align: center;
-      margin-bottom: 30px;
       font-size: 2rem;
-      color: #f39c12;
+      margin-bottom: 30px;
+      color: #66fcf1;
+      text-align: center;
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      gap: 30px;
     }
 
     .card {
-      background-color: #1e1e1e;
+      background-color: #1f2833;
+      border-left: 5px solid #66fcf1;
       padding: 20px;
-      border-radius: 10px;
-      transition: transform 0.3s;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
     }
 
     .card:hover {
@@ -85,20 +99,20 @@
     }
 
     .card h3 {
+      color: #66fcf1;
       margin-bottom: 10px;
-      color: #f39c12;
     }
 
     .card p {
-      color: #ccc;
+      color: #c5c6c7;
     }
 
     footer {
-      background-color: #000;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
-      color: #aaa;
+      background-color: #0b0c10;
+      color: #888;
+      margin-top: 50px;
     }
 
     @media (max-width: 600px) {
@@ -106,9 +120,8 @@
         font-size: 2rem;
       }
 
-      nav {
-        flex-direction: column;
-        gap: 10px;
+      nav a {
+        margin: 5px 10px;
       }
     }
   </style>
@@ -116,37 +129,39 @@
 <body>
 
   <header>
-    <h1>Basquete Hoje: Energia nas Quadras</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/NBA_logo.svg" alt="NBA Logo" />
+    <h1>NBA Hoje</h1>
+    <p>Acompanhe os jogos, destaques e lendas das quadras</p>
   </header>
 
   <nav>
     <a href="#">Início</a>
-    <a href="#">Notícias</a>
-    <a href="#">Jogadores</a>
-    <a href="#">Temporada</a>
+    <a href="#">Jogos</a>
+    <a href="#">Estatísticas</a>
+    <a href="#">Times</a>
     <a href="#">Contato</a>
   </nav>
 
   <div class="content">
-    <h2 class="section-title">Destaques</h2>
+    <h2 class="section-title">Destaques da NBA</h2>
     <div class="cards">
       <div class="card">
-        <h3>NBA 2025</h3>
-        <p>Os playoffs estão pegando fogo! Times históricos disputam cada ponto com intensidade máxima.</p>
+        <h3>Jogão da Noite</h3>
+        <p>Bucks vs. Celtics: Tatum anota 44 pontos em uma virada espetacular no último quarto!</p>
       </div>
       <div class="card">
-        <h3>Novas Promessas</h3>
-        <p>Conheça os jovens talentos que estão se destacando nas ligas universitárias e no Draft.</p>
+        <h3>Estatísticas</h3>
+        <p>Luka Dončić lidera a temporada com média de 33.7 pontos por jogo, seguido por Embiid e Curry.</p>
       </div>
       <div class="card">
-        <h3>Dicas de Treinamento</h3>
-        <p>Quer melhorar seu arremesso? Veja nossos treinos recomendados para amadores e profissionais.</p>
+        <h3>Rumo ao MVP</h3>
+        <p>Giannis e Jokic estão na corrida pelo prêmio de MVP. Veja os números atualizados.</p>
       </div>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 Basquete Hoje. Todos os direitos reservados.
+    &copy; 2025 NBA Hoje. Site feito por fãs, para fãs. Não oficial.
   </footer>
 
 </body>
